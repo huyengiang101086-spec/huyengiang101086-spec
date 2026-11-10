@@ -15,11 +15,13 @@ concurrency:
 jobs:
   refresh:
     if: github.repository == 'huyengiang101086-spec/huyengiang101086-spec'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7.0.1
+        with:
+          clean: false
+      - uses: actions/setup-python@v7.1.0
         with:
           python-version: '3.12'
       - name: 获取公开贡献并更新图片
@@ -38,3 +40,4 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "chore: refresh public contribution statistics"
           git push origin HEAD:main
+
