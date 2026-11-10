@@ -24,7 +24,7 @@
     },
     {
       "repo": "openclaw/openclaw",
-      "stars": 394268,
+      "stars": 394269,
       "desc": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
       "owner": "openclaw",
       "logo": {
@@ -65,5 +65,5 @@
       "prs_exact": true
     }
   ],
-  "generated_at": "2026-11-10T09:57:56.323871+00:00"
+  "generated_at": "2026-11-10T09:58:49.350320+00:00"
 }
